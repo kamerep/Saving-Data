@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.pc.savingdata.showActivity">
+
+    <EditText
+        android:id="@+id/inputid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Movie ID"
+        android:inputType="number"
+        android:textColor="#000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:layout_marginTop="16dp"
+        android:onClick="search"
+        android:text="SEARCH"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inputid"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="26dp"
+        android:text="The Scope"
+        android:textColor="#ff1a26"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/inputid"
+        app:layout_constraintTop_toBottomOf="@+id/inputid" />
+
+    <TextView
+        android:id="@+id/txtYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="2000"
+        android:textColor="#c90a47"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/txtTitle"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <TextView
+        android:id="@+id/txtCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Drama"
+        android:textColor="#a35caf"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txtYear"
+        app:layout_constraintTop_toBottomOf="@+id/txtYear" />
+
+    <Button
+        android:onClick="delete"
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Delete"
+        app:layout_constraintStart_toEndOf="@+id/inputid"
+        app:layout_constraintTop_toBottomOf="@+id/inputid" />
+</android.support.constraint.ConstraintLayout>
